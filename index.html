@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Technology - Innovating the Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    
+    
+    .menu-toggle {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      cursor: pointer;
+      display: block;
+    }
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #00ffe5;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ffe5;
+    }
+    nav a {
+      color: #00ffe5;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: 600;
+    }
+    nav.show {
+      display: flex;
+    }
+    @media (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+      nav {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+      }
+      nav a {
+        margin: 0 20px;
+      }
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+    }
+    .hero h1 {
+      font-size: 42px;
+      background: linear-gradient(90deg, #ff00ff, #00ffe5);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ffe5;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .card {
+      background: #121212;
+      border: 1px solid #00ffe5;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 0 10px #00ffe5;
+      transition: 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px #ff00ff;
+      transform: scale(1.05);
+    }
+    .card h3 {
+      color: #ff00ff;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #aaa;
+      font-size: 14px;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+    .glow-text {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    }
+    .logo-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle, #111, #000);
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  background: conic-gradient(from 90deg, #00ffe5, #ff00ff, #00ffe5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #00ffe5;
+  animation: rotateLogo 8s linear infinite;
+}
+
+.logo-text {
+  font-size: 42px;
+  font-weight: bold;
+  background: linear-gradient(to right, #fff, #0ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-title {
+  font-size: 36px;
+  margin-top: 10px;
+  background: linear-gradient(to right, #00ffe5, #ff00ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-subtitle {
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+@keyframes rotateLogo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  </style>
+</head>
+<body>
+   <section class="logo-section">
+  <div class="logo-circle">
+    <span class="logo-text">AR</span>
+  </div>
+  <h1 class="logo-title">AR TECHNOLOGY</h1>
+  <p class="logo-subtitle">Innovating Digital Futures</p>
+</section>
+  <header>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  
+  </section>  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>AR Technology is a leading tech innovator in AI, Web Development, and Ethical Hacking tools. We build futuristic digital experiences.</p>
+  </section>  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>Powerful GPT-based bots for business, education & support.</p>
+      </div>
+      <div class="card">
+        <h3>Termux Tools</h3>
+        <p>Custom rootless tools with hacker-style UI and fast performance.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Dynamic, responsive websites with animations and secure design.</p>
+      </div>
+      <div class="card">
+        <h3>Android Apps</h3>
+        <p>App development using Pydroid 3, Flask, Firebase and more.</p>
+      </div>
+    </div>
+  </section>  <section class="section" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>ARMUX SS</h3>
+        <p>India's top Termux hacking framework with animation and powerful tools.</p>
+      </div>
+      <div class="card">
+        <h3>ARMUX Learn Hub</h3>
+        <p>AI-powered educational app with facts, quizzes and futuristic design.</p>
+      </div>
+      <div class="card">
+        <h3>PhantomRecon</h3>
+        <p>Real-time phishing with auto-logs, templates and public links.</p>
+      </div>
+    </div>
+  </section>  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>ayushrajbhar204@gmail.com</strong></p>
+    <p>Instagram: <a href="https://instagram.com/armux_ss" target="_blank" style="color:#0ff">@armux_ss</a></p>
+  </section>  <footer>
+    &copy; 2025 AR TECHNOLOGY. All rights reserved.
+  </footer>  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script></body>
+  </html>
